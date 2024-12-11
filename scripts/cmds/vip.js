@@ -1,4 +1,4 @@
-const header = `👑𝙰𝚁𝚈𝙰𝙽 𝚅𝙸𝙿 𝚄𝚂𝙴𝚁 👑`;
+const header = `👑𝘒𝘺𝘭𝘦—𝙫𝙞𝙥 𝙪𝙨𝙚𝙧👑`;
 
 const fs = require("fs");
 
@@ -37,7 +37,7 @@ module.exports = {
 	config: {
 		name: "vip",
 		version: "1.0", // Updated version to 1.0
-		author: "Aryan Chauhan",
+		author: "",
 		role: 2,
 		category: "Config",
 		guide: {
