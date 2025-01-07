@@ -34,7 +34,7 @@ module.exports = {
 
     langs: {
         en: {
-            help: "𓃵 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗟𝗶𝘀𝘁\n\n%1\n\n» Page: %2/%3\n» Use help or helpall [page number] to display the information on the additional pages.",
+            help: "✨ 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗟𝗶𝘀𝘁\n\n%1\n\n» Page: %2/%3\n» Use help or helpall [page number] to display the information on the additional pages.",
             commandNotFound: "Command \"%1\" does not exist",
             getInfoCommand: "『 %1 』\nView the details of the commands.\n\n   •  Version: %2\n   •  Category: %3\n   •  Cooldown: %4\n   •  Permission: %5\n   •  Creator: %6\n\nUsage:\n   •  %7",
             onlyInfo: "『 Info 』\nCommand name: %1\nDescription: %2\nOther names: %3\nOther names in your group: %4\nVersion: %5\nRole: %6\nTime per command: %7s\nAuthor: %8",
@@ -96,7 +96,7 @@ module.exports = {
 
             const returnArray = allPage[page - 1] || [];
             const startNumber = (page - 1) * numberOfOnePage + 1;
-            msg += (returnArray || []).reduce((text, item, index) => text += `『 ${index + startNumber} 』 =${item.data}\n`, '').slice(0, -1);
+            msg += (returnArray || []).reduce((text, item, index) => text += `『 ${index + startNumber} 』prefix:( . )${item.data}\n`, '').slice(0, -1);
             await message.reply(getLang("help", msg, page, totalPage, commands.size, prefix, doNotDelete));
         }
         // ———————————— COMMAND DOES NOT EXIST ———————————— //
